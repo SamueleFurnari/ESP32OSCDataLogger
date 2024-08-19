@@ -73,7 +73,7 @@ void printOSCMessage(OSCMessage &msg) {
     } else if (msg.isFloat(i))
     {
       Serial.print("Float: ");
-      Serial.println(msg.getFloat(i));
+      Serial.println(msg.getFloat(i), 6);
     } else if (msg.isString(i))
     {
       char buffer[100];
